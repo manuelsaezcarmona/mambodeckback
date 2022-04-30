@@ -4,7 +4,12 @@
   "description": "Node Server from mambodeck app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=prod nodemon",
+    "dev": "cross-env NODE_ENV=dev nodemon",
+    "test": "cross-env NODE_ENV=test jest",
+    "testcover": "cross-env NODE_ENV=test jest --watchAll --collect-coverage",
+    "lint": "eslint",
+    "lint-fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,25 @@
   "bugs": {
     "url": "https://github.com/manuelsaezcarmona/mambodeckback/issues"
   },
-  "homepage": "https://github.com/manuelsaezcarmona/mambodeckback#readme"
+  "homepage": "https://github.com/manuelsaezcarmona/mambodeckback#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "jest": "^28.0.3",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  }
 }

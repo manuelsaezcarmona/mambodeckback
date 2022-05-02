@@ -1,0 +1,16 @@
+{
+  "username": "Gonzalo alabrasa",
+  "pass": "megustato",
+  "email": "gonzo@email.com",
+  "favourites": [
+    "61a5f3aac13b6a68fbfa7f10_ObjectId",
+    "61a5f3aac13b6a68fbfa7f10_ObjectId"
+  ],
+  "evaluations": [
+    {
+      "recipe_id": "61a5f3aac13b6a68fbfa7f10_ObjectId",
+      "evaluation_id": "61a5f3aac13b6a68fbfa7f10_ObjectId",
+      "user_mark": 5
+    }
+  ]
+}

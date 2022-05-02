@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="./assets/faviconM.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Servidor MamboDeck</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="text_group">
+        <h1>Servidor MamboDeck</h1>
+        <p class="text_404">Server</p>
+        <p class="text_lost">
+          Servidor Recetas Mambodeck <br />pulsa
+          <a href="http://" target="_blank" rel="noopener noreferrer">aqui</a>
+          para ir a la aplicacion
+        </p>
+        <p class="text_lost">
+          <img
+            class="logo"
+            src="./assets/iconM-black-trans192.png"
+            alt="logo manu"
+          />
+        </p>
+      </div>
+      <div class="window_group">
+        <div class="window_404">
+          <div class="stars"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let starContainer = document.querySelector('.stars');
+
+      for (let i = 0; i < 100; i++) {
+        starContainer.innerHTML += `<div class="star"></div>`;
+      }
+    </script>
+  </body>
+</html>

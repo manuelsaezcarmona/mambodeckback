@@ -32,4 +32,4 @@ const dbConexion = async () => {
   }
 };
 
-module.exports = { dbConexion };
+module.exports = { dbConexion, getDataBaseName };

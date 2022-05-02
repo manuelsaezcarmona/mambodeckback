@@ -5,10 +5,17 @@ const cors = require('cors');
 
 const app = express();
 
-/** MIDDLEWARES */
-app.use(cors());
-app.use(morgan('dev'));
+/** DB connection */
 
+/** MIDDLEWARES */
+// Security
+app.use(cors());
+// Request information from server
+app.use(morgan('dev'));
+// read and Parse body request (from POST and PUT request)
+app.use(express.json());
+// public directory, page in server
+app.use(express.static('public'));
 /** ROUTES */
 
 /** Server Up */

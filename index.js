@@ -21,5 +21,5 @@ app.use(express.static('public'));
 /** Server Up */
 
 app.listen(process.env.port, () => {
-  console.log(`Server up  in port: ${process.env.PORT}`);
+  console.log(`Server up in port: ${process.env.PORT}`);
 });

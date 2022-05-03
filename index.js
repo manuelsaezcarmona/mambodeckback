@@ -3,6 +3,7 @@ require('dotenv').config();
 const morgan = require('morgan');
 const cors = require('cors');
 const { dbConexion } = require('./config/db.config');
+const { createJWT } = require('./helpers/jwt');
 
 const app = express();
 
@@ -20,8 +21,10 @@ app.use(express.json());
 app.use(express.static('public'));
 /** ROUTES */
 
-/** Server Up */
+const token = createJWT(1234, 'Manuelito');
+console.log(token);
 
+/** Server Up */
 app.listen(process.env.port, () => {
   console.log(`Server up in port: ${process.env.PORT}`);
 });

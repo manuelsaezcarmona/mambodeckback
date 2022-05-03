@@ -23,7 +23,6 @@ const dbConexion = async () => {
   try {
     const uri = `mongodb+srv://${user}:${pass}${cluster}/${databaseName}`;
     const conexionMongoose = await mongoose.connect(uri);
-    console.log(uri);
     console.log('DB Conectada');
     return conexionMongoose;
   } catch (error) {
